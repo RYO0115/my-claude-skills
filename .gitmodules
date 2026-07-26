@@ -19,3 +19,6 @@
 [submodule "claude-opus5-prompting"]
 	path = claude-opus5-prompting
 	url = https://github.com/RYO0115/claude-opus5-prompting.git
+[submodule "claude-task-triage-skill"]
+	path = claude-task-triage-skill
+	url = https://github.com/RYO0115/claude-task-triage-skill.git
