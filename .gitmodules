@@ -16,3 +16,6 @@
 [submodule "python-dev-workflow"]
 	path = python-dev-workflow
 	url = https://github.com/RYO0115/python-dev-workflow.git
+[submodule "claude-opus5-prompting"]
+	path = claude-opus5-prompting
+	url = https://github.com/RYO0115/claude-opus5-prompting.git
