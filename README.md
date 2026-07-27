@@ -53,15 +53,29 @@ cp -R market-research ~/.claude/skills/market-research
 
 ### 方法 B: この集約リポジトリごと clone(全スキルをまとめて使う)
 
-submodule を含めて取得します:
+submodule を含めて取得します。clone 先パスを引数で直接指定できます:
 
 ```bash
-git clone --recurse-submodules https://github.com/RYO0115/my-claude-skills.git
-# 既に clone 済みなら:
+# 対象プロジェクトの .claude/skills 配下へ直接 clone
+git clone --recurse-submodules \
+  https://github.com/RYO0115/my-claude-skills.git \
+  /path/to/target-project/.claude/skills
+
+# 全プロジェクト共通(ユーザーディレクトリ)へ直接 clone
+git clone --recurse-submodules \
+  https://github.com/RYO0115/my-claude-skills.git \
+  ~/.claude/skills
+```
+
+> `.claude/skills` 直下にこのリポジトリの中身(各スキルディレクトリ)が展開されるため、各スキルが `~/.claude/skills/<skill-name>/SKILL.md` の形で認識されます。指定したパスの末尾ディレクトリは存在しない(または空)必要があります。
+
+既に clone 済みで submodule を後から取得する場合:
+
+```bash
 git submodule update --init --recursive
 ```
 
-取得後、必要なスキルを方法 A の要領で対象プロジェクトの `.claude/skills/` へコピーします。
+必要なスキルだけ使いたい場合は、取得後に方法 A の要領で対象プロジェクトの `.claude/skills/` へコピーします。
 
 ### 方法 C: 個別スキルを submodule として取り込む(更新を追従したい場合)
 
