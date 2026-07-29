@@ -22,3 +22,6 @@
 [submodule "claude-task-triage-skill"]
 	path = claude-task-triage-skill
 	url = https://github.com/RYO0115/claude-task-triage-skill.git
+[submodule "math-explanation-skill"]
+	path = math-explanation-skill
+	url = https://github.com/RYO0115/math-explanation-skill.git
