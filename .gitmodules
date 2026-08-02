@@ -25,3 +25,6 @@
 [submodule "math-explanation-skill"]
 	path = math-explanation-skill
 	url = https://github.com/RYO0115/math-explanation-skill.git
+[submodule "claude-goal-template"]
+	path = claude-goal-template
+	url = https://github.com/RYO0115/claude-goal-template.git
